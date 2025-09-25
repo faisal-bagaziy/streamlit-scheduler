@@ -132,7 +132,7 @@ def app():
                 title="UAT Scenario Timeline by Resource Allocation"
             )
             fig.update_yaxes(autorange="reversed") 
-            st.plotly_chart(fig, width='stretch' )
+            st.plotly_chart(fig, use_container_width=True, config={})
 
 if __name__ == '__main__':
     app()
