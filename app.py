@@ -25,14 +25,14 @@ def app():
     
     # Just providing some starter data, so folks don't have to start from scratch.
     default_personnel_data = [
-        {'name': 'Alice', 'workstream': 'Finance'},
-        {'name': 'Bob', 'workstream': 'Logistics'},
-        {'name': 'Charlie', 'workstream': 'IT'},
+        {'name': 'Faisal', 'workstream': 'Finance'},
+        {'name': 'Khalid', 'workstream': 'Logistics'},
+        {'name': 'Hatiem', 'workstream': 'IT'},
     ]
     # Note: We keep the workstreams here as a string that LOOKS like a list for the editor.
     default_scenario_data = [
-        {'name': 'P2P End-to-End', 'duration_hours': 12, 'required_workstreams': "['Finance', 'Logistics', 'IT']"},
-        {'name': 'Invoice Posting', 'duration_hours': 6, 'required_workstreams': "['Finance']"},
+        {'name': 'hire to retire', 'duration_hours': 12, 'required_workstreams': "['Finance', 'Logistics', 'IT']"},
+        {'name': 'PS End-End', 'duration_hours': 6, 'required_workstreams': "['Finance']"},
     ]
 
 
