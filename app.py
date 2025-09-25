@@ -45,7 +45,7 @@ def app():
         personnel_df = st.data_editor(
             pd.DataFrame(default_personnel_data),
             num_rows="dynamic",
-            use_container_width=True,
+            width='stretch' ,
             key='personnel_editor'
         )
         # Convert it back to the format the solver likes.
@@ -60,7 +60,7 @@ def app():
         scenario_df = st.data_editor(
             pd.DataFrame(default_scenario_data),
             num_rows="dynamic",
-            use_container_width=True,
+            width='stretch' ,
             key='scenario_editor'
         )
         
@@ -110,7 +110,7 @@ def app():
 
             # Data Table
             st.subheader("scheduled Details")
-            st.dataframe(schedule_df, use_container_width=True)
+            st.dataframe(schedule_df, width='stretch' )
 
             # --- Gantt Chart Visualization ---
             st.subheader("gantt chart visualization")
@@ -132,7 +132,7 @@ def app():
                 title="UAT Scenario Timeline by Resource Allocation"
             )
             fig.update_yaxes(autorange="reversed") 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch' )
 
 if __name__ == '__main__':
     app()
